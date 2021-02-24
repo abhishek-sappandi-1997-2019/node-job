@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const route = require('./config/route')
 const ConfigDB = require('./config/database')
-const port  = 3029
+const port  = 3029 || process.env.PORT
 const app = express()
 
 ConfigDB()
